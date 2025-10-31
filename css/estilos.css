@@ -1,6 +1,7 @@
-/* Este archivo aplica estilos y color a la página */
+/* ==================================== */
+/* 1. Estilos Base y Estructura Global  */
+/* ==================================== */
 
-/* Estilos Base */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
@@ -23,7 +24,7 @@ h1 {
 
 main {
     width: 80%;
-    max-width: 800px; /* Límite de ancho */
+    max-width: 900px;
     margin: 0 auto;
     padding: 20px;
     background-color: white;
@@ -31,26 +32,37 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos para el Menú de Navegación */
+footer {
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+
+/* ==================================== */
+/* 2. Estilos del Menú de Navegación    */
+/* ==================================== */
+
 nav ul {
-    list-style: none;
+    list-style: none; 
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
+    display: flex; 
+    justify-content: center; 
 }
 
 nav li {
-    margin: 0 15px;
+    margin: 0 15px; 
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
+    color: white; 
+    text-decoration: none; 
     font-weight: bold;
     padding: 10px;
     display: block;
-    transition: background-color 0.3s; /* Animación suave */
+    transition: background-color 0.3s; 
 }
 
 nav a:hover {
@@ -58,47 +70,48 @@ nav a:hover {
     border-radius: 5px;
 }
 
-/* Estilos Específicos para el Formulario de Contacto */
+/* ==================================== */
+/* 3. Estilos del Formulario de Contacto*/
+/* ==================================== */
 
-/* Estilo para la caja contenedora del formulario */
 form {
-    background-color: #ffffff; /* Fondo blanco */
+    background-color: #ffffff;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 500px; /* Ancho máximo para que no se extienda demasiado */
-    margin: 20px auto; /* Centrar el formulario */
+    box-shadow: none; /* Quitamos la sombra de la forma para que no duplique la de main */
+    max-width: 450px; 
+    margin: 20px auto; 
+    text-align: left; /* Alineamos el texto dentro del formulario a la izquierda */
+}
+
+/* Espacio debajo de cada campo */
+form div {
+    margin-bottom: 15px; 
 }
 
 /* Estilo para las etiquetas (Nombre, Email, Mensaje) */
 label {
-    display: block; /* Cada etiqueta en su propia línea */
-    margin-bottom: 8px;
+    display: block; 
+    margin-bottom: 5px;
     font-weight: bold;
     color: #555;
 }
 
-/* Estilo para los campos de texto e email */
+/* Estilo para los campos de texto, email y área de texto */
 input[type="text"], 
 input[type="email"], 
 textarea {
-    width: 100%; !important;
-    padding: 10px; !important;
-    margin-bottom: 20px; !important;
-    border: 1px solid #ccc; !important;
-    border-radius: 4px; !important;
-    box-sizing: border-box !important; /* Asegura que el padding no afecte el ancho total */
-    font-size: 1em !important;
-}
-
-/* Asegurar que el área de texto se vea bien */
-textarea {
-    resize: vertical; /* Permite redimensionar solo verticalmente */
+    width: 100%; /* Ocupa todo el ancho */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    font-size: 1em;
 }
 
 /* Estilo para el botón Enviar */
 button[type="submit"] {
-    background-color: #28a745; /* Un color verde para el botón de acción */
+    background-color: #28a745;
     color: white;
     padding: 12px 25px;
     border: none;
@@ -106,8 +119,10 @@ button[type="submit"] {
     cursor: pointer;
     font-size: 1.1em;
     transition: background-color 0.3s;
+    display: block; /* Para que el botón ocupe su propia línea */
+    margin-top: 20px;
 }
 
 button[type="submit"]:hover {
-    background-color: #1e7e34; /* Oscurecer un poco al pasar el ratón */
+    background-color: #1e7e34;
 }
