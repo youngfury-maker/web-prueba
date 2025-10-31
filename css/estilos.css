@@ -169,3 +169,47 @@ button[type="submit"]:hover {
         font-size: 0.8em;
     }
 }
+
+/* ==================================== */
+/* 5. Estilos para Tarjetas Destacadas  */
+/* ==================================== */
+
+.destacados {
+    display: flex; /* Habilita Flexbox para alinear tarjetas */
+    justify-content: space-around; /* Distribuye el espacio entre ellas */
+    gap: 20px; /* Espacio entre las tarjetas */
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.servicio-card {
+    flex: 1; /* Permite que la tarjeta crezca y ocupe espacio igual */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.servicio-card h4 {
+    color: #007bff;
+    margin-top: 0;
+}
+
+.servicio-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Adaptación Responsiva para las Tarjetas (dentro de @media (max-width: 600px)) */
+@media (max-width: 600px) {
+    
+    .destacados {
+        flex-direction: column; /* Apila las tarjetas verticalmente en móviles */
+    }
+
+}
