@@ -126,3 +126,46 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #1
+
+}
+
+/* ==================================== */
+/* 4. Diseño Responsivo (Media Queries) */
+/* ==================================== */
+
+@media (max-width: 600px) {
+    
+    /* 1. Encabezado y Títulos */
+    header {
+        padding: 15px 10px; /* Reduce el relleno del encabezado */
+    }
+
+    h1 {
+        font-size: 1.8em; /* Hace el título más pequeño */
+    }
+
+    /* 2. Menú de Navegación */
+    nav ul {
+        flex-direction: column; /* Apila los enlaces en una columna (vertical) */
+        padding-top: 10px; /* Espacio superior */
+    }
+
+    nav li {
+        margin: 5px 0; /* Añade un pequeño margen vertical */
+    }
+    
+    nav a {
+        padding: 8px 0;
+    }
+
+    /* 3. Contenido Principal */
+    main {
+        width: 95%; /* Hace que el contenedor principal ocupe más ancho en móviles */
+        padding: 15px;
+    }
+
+    /* 4. Footer */
+    footer {
+        font-size: 0.8em;
+    }
+}
