@@ -1,45 +1,19 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto | Mi Web de Prueba Limpia</title>
-    <link rel="stylesheet" href="css/estilos.css">
-</head>
-<body>
-    <header>
-        <h1>Mi Web de Prueba Limpia</h1>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+<form action="#" method="POST" style="max-width: 400px; margin: 20px auto;"> 
+    
+    <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+    </div>
 
-    <main>
-        <h2>Contáctanos</h2>
-        <p>Envíanos un mensaje y la vale te respondera altoque.</p>
+    <div>
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
 
-        <form action="#" method="POST">
-    <label for="nombre">Nombre:</label><br>
-    <input type="text" id="nombre" name="nombre" required><br>
-
-    <label for="email">Correo Electrónico:</label><br>
-    <input type="email" id="email" name="email" required><br>
-
-    <label for="mensaje">Mensaje:</label><br>
-    <textarea id="mensaje" name="mensaje" rows="6" required></textarea><br>
+    <div>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+    </div>
 
     <button type="submit">Enviar Mensaje</button>
 </form>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Mi Proyecto de Prueba</p>
-    </footer>
-</body>
-</html>
