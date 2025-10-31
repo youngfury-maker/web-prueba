@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #007bff; /* Azul vibrante */
+    background-color: #007bff;
     color: white;
     padding: 20px;
     margin-bottom: 20px;
@@ -78,21 +78,21 @@ form {
     background-color: #ffffff;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: none; /* Quitamos la sombra de la forma para que no duplique la de main */
+    box-shadow: none; 
     max-width: 450px; 
     margin: 20px auto; 
-    text-align: left; /* Alineamos el texto dentro del formulario a la izquierda */
+    text-align: left; 
 }
 
-/* Espacio debajo de cada campo */
+/* Espacio y estructura para los campos */
 form div {
     margin-bottom: 15px; 
 }
 
 /* Estilo para las etiquetas (Nombre, Email, Mensaje) */
 label {
-    display: block; 
-    margin-bottom: 5px;
+    display: block; /* Hace que la etiqueta ocupe toda la línea */
+    margin-bottom: 5px; /* Crea el espacio entre la etiqueta y el campo */
     font-weight: bold;
     color: #555;
 }
@@ -101,12 +101,13 @@ label {
 input[type="text"], 
 input[type="email"], 
 textarea {
-    width: 100%; /* Ocupa todo el ancho */
+    width: 100%; /* Ocupa todo el ancho disponible del contenedor */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; 
+    box-sizing: border-box; /* Asegura que el padding no desborde el 100% */
     font-size: 1em;
+    /* QUITAMOS EL MARGEN INFERIOR DE AQUÍ PARA CONTROLARLO CON EL DIV PADRE */
 }
 
 /* Estilo para el botón Enviar */
@@ -119,10 +120,9 @@ button[type="submit"] {
     cursor: pointer;
     font-size: 1.1em;
     transition: background-color 0.3s;
-    display: block; /* Para que el botón ocupe su propia línea */
+    display: block; 
     margin-top: 20px;
 }
 
 button[type="submit"]:hover {
-    background-color: #1e7e34;
-}
+    background-color: #1
