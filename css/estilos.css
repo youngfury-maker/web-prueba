@@ -16,7 +16,7 @@ header {
     color: white;
     padding: 20px;
     margin-bottom: 20px;
-    position: relative; /* Necesario para posicionar el botón */
+    position: relative; 
 }
 
 h1 {
@@ -167,14 +167,50 @@ button[type="submit"]:hover {
 
 
 /* ==================================== */
-/* 5. Diseño Responsivo (Media Queries) */
+/* 5. Estilos para Bloques de Servicios */
+/* ==================================== */
+
+.servicios-detalles {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 20px; 
+    margin-top: 30px;
+}
+
+.servicio-bloque {
+    /* 2 bloques por fila en escritorio */
+    flex: 1 1 calc(50% - 10px); 
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.servicio-bloque h3 {
+    color: #007bff;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.servicio-bloque ul {
+    list-style: disc;
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+
+/* ==================================== */
+/* 6. Diseño Responsivo (Media Queries) */
 /* ==================================== */
 
 @media (max-width: 600px) {
     
     /* Mostrar y Estilizar el Botón Hamburguesa */
     .menu-toggle {
-        display: block; /* Mostrar el botón en móviles */
+        display: block; 
         position: absolute;
         top: 25px;
         right: 20px;
@@ -190,18 +226,18 @@ button[type="submit"]:hover {
 
     /* Ocultar el Menú por Defecto */
     #main-nav {
-        display: none; /* Crucial: Ocultar el menú por defecto en móviles */
+        display: none; 
         width: 100%;
-        background-color: #0056b3; /* Color oscuro al desplegarse */
+        background-color: #0056b3; 
         position: absolute;
-        top: 65px; /* Colocarlo justo debajo del encabezado */
+        top: 65px; 
         left: 0;
         text-align: left;
     }
 
     /* Mostrar el Menú cuando tiene la clase 'active' */
     #main-nav.active {
-        display: block; /* JavaScript añade esta clase para mostrar el menú */
+        display: block; 
     }
 
     /* Ajustar los enlaces */
@@ -218,14 +254,12 @@ button[type="submit"]:hover {
         padding: 12px 20px;
     }
 
-    /* Otros elementos responsivos */
+    /* Contenedor principal */
     main {
         width: 95%; 
         padding: 15px;
     }
 
+    /* Apilar tarjetas destacadas */
     .destacados {
-        flex-direction: column; /* Apila las tarjetas verticalmente */
-    }
-
-}
+        flex
