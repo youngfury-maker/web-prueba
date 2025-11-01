@@ -144,4 +144,16 @@ button[type="submit"]:hover {
 }
 
 .servicio-card {
-    flex
+    flex: 1; 
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    /* [ESTADO BASE] Sombra ligera */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
+    text-align: center;
+    /* ANIMACIÓN */
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.servicio-card:hover {
+    /* EF
