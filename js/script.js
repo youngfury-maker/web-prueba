@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // 1. Obtener la referencia al botón hamburguesa
+    // 1. Obtener el botón y el menú
     const menuToggle = document.getElementById('menu-toggle');
-    
-    // 2. Obtener la referencia al elemento NAV (el menú)
     const nav = document.getElementById('main-nav');
 
-    // 3. Añadir un "escuchador de eventos" (event listener) al botón
-    menuToggle.addEventListener('click', function() {
-        // La acción principal: añadir o quitar la clase 'active'
-        nav.classList.toggle('active');
-    });
+    // 2. Añadir el evento de clic
+    if (menuToggle && nav) {
+        menuToggle.addEventListener('click', function() {
+            // Alternar la clase 'active' en el NAV
+            nav.classList.toggle('active');
+        });
+    }
 });
