@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto | Proyecto Base</title>
+    <title>Contacto | Blog de Breakshield</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <header>
-        <h1>Mi Proyecto Web Base</h1>
+        <h1>Blog de Breakshield</h1>
         <button class="menu-toggle" id="menu-toggle">☰</button> 
         <nav id="main-nav">
             <ul>
@@ -22,35 +22,31 @@
 
     <main>
         <h2>Contáctanos</h2>
-        <p>¡Envíanos un mensaje y te responderemos a la brevedad posible!</p>
+        <p>Usa esta plantilla de formulario para integrarla con un servicio como Formspree (Formularios simples).</p>
         
-        <div class="formulario-container">
+        <form action="https://formspree.io/f/xyzbbzjb" method="POST"> 
             
-            <form action="https://formspree.io/f/xyzbbzjb" method="POST"> 
-                
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </div>
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
 
-                <div>
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="_replyto" required> 
-                </div>
+            <div>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="_replyto" required>
+            </div>
 
-                <div>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
-                </div>
+            <div>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+            </div>
 
-                <button type="submit">Enviar Mensaje</button>
-            </form>
-
-        </div>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
     </main>
 
     <footer>
-        <p>&copy; 2025 Proyecto Base</p>
+        <p>&copy; 2025 Blog de Breakshield</p>
     </footer>
 
     <script src="js/script.js"></script> 
