@@ -14,12 +14,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // ===============================================
     // 2. Lógica de Envío de Formulario (Feedback)
     // ===============================================
-    const form = document.querySelector('form'); // Selecciona el primer y único formulario
+    const form = document.querySelector('form'); 
 
     if (form) {
         form.addEventListener('submit', function(event) {
             
-            // Verifica que los campos requeridos estén llenos (lo que hace HTML)
+            // Verifica que los campos requeridos estén llenos
             if (form.checkValidity()) {
                 const submitButton = form.querySelector('button[type="submit"]');
                 
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 submitButton.disabled = true;
                 submitButton.textContent = 'Enviando...';
                 
-                // El navegador procederá a enviar el formulario a Formspree (redirección)
+                // El navegador enviará el formulario a Formspree (redirección)
             }
         });
     }
