@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // 2. Añadir el evento de clic
     if (menuToggle && nav) {
         menuToggle.addEventListener('click', function() {
-            // Alternar la clase 'active' en el NAV
+            // Alternar la clase 'active' para mostrar/ocultar el menú
             nav.classList.toggle('active');
         });
     }
