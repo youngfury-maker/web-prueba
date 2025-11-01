@@ -8,8 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // 3. Añadir un "escuchador de eventos" (event listener) al botón
     menuToggle.addEventListener('click', function() {
         // La acción principal: añadir o quitar la clase 'active'
-        // Si el menú tiene la clase 'active', la quita (ocultándolo).
-        // Si no la tiene, la añade (mostrándolo).
         nav.classList.toggle('active');
     });
 });
